@@ -53,15 +53,11 @@ function App() {
     {
       
       path:'/asosiy',
+      element: user? <Navigate to='/'/>:<LogAut/>
+    },
+    {
+      path:'/logaut',
       element: user? <Navigate to='/'/>:<LoginBirinchi/>
-      },
-      {
-        path: '/signup',
-        element: user? <Navigate to='/asosiy'/>: <LogAut />,
-      },
-      {
-        path:'/logaut',
-        element: user? <Navigate to='/asosiy'/>:<LogAut/>
       },
        
   ])
